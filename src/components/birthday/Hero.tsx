@@ -1,7 +1,6 @@
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef } from "react";
 import sky from "@/assets/hero-sky.jpg";
-import branches from "@/assets/branches.png";
 import couple from "@/assets/couple.png";
 import { birthday } from "@/config/birthday";
 import { Petals } from "./Petals";
@@ -26,8 +25,6 @@ export function Hero({ onStart }: { onStart: () => void }) {
   const bgScale = useTransform(scrollYProgress, [0, 1], [1.08, 1.2]);
   const cX = useTransform(sx, (v) => v * -35);
   const cScroll = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const brX = useTransform(sx, (v) => v * -70), brY = useTransform(sy, (v) => v * -40);
-  const brScroll = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"]);
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "60%"]);
   const fade = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
 
@@ -43,10 +40,6 @@ export function Hero({ onStart }: { onStart: () => void }) {
 
       <motion.div style={{ x: cX, y: cScroll }} className="absolute bottom-[6%] right-[14%] w-24 md:w-36">
         <img src={couple} alt="A couple holding hands" width={240} height={310} className="w-full drop-shadow-[0_0_30px_rgba(255,200,170,0.6)]" />
-      </motion.div>
-
-      <motion.div style={{ x: brX, y: brY }} className="pointer-events-none absolute -left-[8%] -top-[6%] w-[120%] md:w-[85%]">
-        <motion.img style={{ y: brScroll }} src={branches} alt="" aria-hidden width={1140} height={320} className="w-full" />
       </motion.div>
 
       <Petals count={18} className="z-10" />
