@@ -22,7 +22,7 @@ export function Letter({ open, setOpen }: { open: boolean; setOpen: (v: boolean)
                   <Heart className="text-cream" fill="currentColor" />
                 </div>
               </div>
-              <button onClick={() => { letterSfx(); setOpen(true); }} className="btn-glow mt-10">Buka Suratku 💌</button>
+              <button onClick={() => { letterSfx(); setOpen(true); }} className="btn-glow mt-10">Buka Suratku</button>
             </motion.div>
           ) : (
             <motion.article key="letter" initial={{ opacity: 0, y: 80, rotateX: 40 }} animate={{ opacity: 1, y: 0, rotateX: 0 }} transition={{ duration: 1.4, ease: [0.2, 0.8, 0.2, 1] }}

@@ -1,15 +1,15 @@
 // ✿ Personalize everything here — no other file needs editing.
-import memory1 from "@/assets/memory-1.jpg";
-import memory2 from "@/assets/memory-2.jpg";
-import memory3 from "@/assets/memory-3.jpg";
+import memory1 from "@/assets/download (5).jpg";
+import memory2 from "@/assets/lover.jpg";
+import memory3 from "@/assets/Babe_3.jpg";
 
 export const birthday = {
-  recipientName: "Nama Dia",
-  senderName: "Namamu",
-  birthdayDate: "Tanggal Ulang Tahun",
+  recipientName: "Dara",
+  senderName: "Hanif",
+  birthdayDate: "20 Oktober 2007",
   heroTitle: "Happy Birthday, My Favorite Person",
   heroSubtitle: "Di antara miliaran bintang, aku bersyukur semesta mempertemukan kita.",
-  heroCta: "Mulai Cerita Kita ✨",
+  heroCta: "Mulai Cerita Kita",
   storyTitle: "Hari ini, dunia merayakan seseorang yang istimewa.",
   birthdayMessage: [
     "Hari ini bukan sekadar hari ulang tahunmu.",
@@ -21,9 +21,22 @@ export const birthday = {
   ],
   // Replace with your own photos (import them above, or use https URLs).
   gallery: [
-    { image: memory1, title: "Hujan pertama", caption: "Senyummu adalah bagian favorit dari hariku." },
-    { image: memory2, title: "Senja di atap", caption: "Hal-hal kecil bersamamu menjadi kenangan yang besar." },
-    { image: memory3, title: "Stasiun tepi laut", caption: "Kalau bisa mengulang waktu, aku tetap ingin mengenalmu." },
+{ 
+  image: memory1, 
+  title: "Hujan Pertama", 
+  caption: "Di antara rintik hujan hari itu, ada senyummu yang diam-diam membuatku jatuh hati." 
+},
+{ 
+  image: memory2, 
+  title: "First Date", 
+  caption: "Awalnya hanya dua orang yang ingin saling mengenal, lalu perlahan kamu menjadi seseorang yang istimewa." 
+},
+{ 
+  image: memory3, 
+  title: "Foto Booth Pertama", 
+  caption: "Empat pose sederhana, tapi setiap fotonya menyimpan alasan untuk selalu mengingat kita." 
+},
+
   ],
   birthdayWishes: [
     "Semoga kamu selalu dikelilingi orang-orang yang menyayangimu.",
